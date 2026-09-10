@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-hidden="true">
+  <defs>
+    <pattern id="jaaliTower" width="48" height="48" patternUnits="userSpaceOnUse">
+      <rect width="48" height="48" fill="#F8F3E7" />
+      <path d="M0 24 L24 0 L48 24 L24 48 Z" fill="none" stroke="#E4D5AF" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect width="900" height="1200" fill="url(#jaaliTower)" />
+  <rect x="16" y="16" width="868" height="1168" fill="none" stroke="#9C7B44" stroke-width="3" stroke-dasharray="14 10" />
+  <path d="M350 260 C350 200, 550 200, 550 260 V820 C550 870, 490 910, 450 910 C410 910, 350 870, 350 820 Z"
+        fill="#F8F3E7" stroke="#7A5F35" stroke-width="3" opacity="0.9" />
+  <path d="M405 840 V620 C405 580, 495 580, 495 620 V840" fill="none" stroke="#9C7B44" stroke-width="2.5" />
+  <path d="M450 500 C438 520, 438 540, 450 552 C462 540, 462 520, 450 500 Z" fill="#E4D5AF" stroke="#9C7B44" stroke-width="1.2" />
+  <line x1="450" y1="200" x2="450" y2="140" stroke="#9C7B44" stroke-width="4" />
+  <path d="M400 140 Q450 90 500 140" fill="none" stroke="#9C7B44" stroke-width="4" />
+  <text x="450" y="1000" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#3B2E22" font-weight="600">PLACEHOLDER — tower-set.jpg</text>
+  <text x="450" y="1040" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#6B5A47">Panch Diya Tower — tall tapered tower lantern</text>
+</svg>

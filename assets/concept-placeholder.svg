@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-hidden="true">
+  <defs>
+    <pattern id="jaaliConcept" width="56" height="56" patternUnits="userSpaceOnUse">
+      <rect width="56" height="56" fill="#F8F3E7" />
+      <path d="M0 28 L28 0 L56 28 L28 56 Z" fill="none" stroke="#E4D5AF" stroke-width="1.4" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#jaaliConcept)" />
+  <rect x="16" y="16" width="1168" height="868" fill="none" stroke="#9C7B44" stroke-width="3" stroke-dasharray="14 10" />
+  <g transform="translate(220,420)" opacity="0.85">
+    <rect x="0" y="0" width="180" height="130" rx="4" fill="#F8F3E7" stroke="#7A5F35" stroke-width="2.5" />
+    <line x1="20" y1="0" x2="20" y2="130" stroke="#9C7B44" stroke-width="1.2" />
+    <line x1="60" y1="0" x2="60" y2="130" stroke="#9C7B44" stroke-width="1.2" />
+    <line x1="100" y1="0" x2="100" y2="130" stroke="#9C7B44" stroke-width="1.2" />
+    <line x1="140" y1="0" x2="140" y2="130" stroke="#9C7B44" stroke-width="1.2" />
+  </g>
+  <g transform="translate(520,300)" opacity="0.85">
+    <path d="M0 60 C0 20, 140 20, 140 60 V240 C140 270, 110 290, 70 290 C30 290, 0 270, 0 240 Z"
+          fill="#F8F3E7" stroke="#7A5F35" stroke-width="2.5" />
+    <path d="M40 250 V180 C40 158, 100 158, 100 180 V250" fill="none" stroke="#9C7B44" stroke-width="2" />
+  </g>
+  <g transform="translate(760,280)" opacity="0.95">
+    <path d="M0 70 C0 24, 160 24, 160 70 V280 C160 312, 128 336, 84 336 C40 336, 0 312, 0 280 Z"
+          fill="#F8F3E7" stroke="#7A5F35" stroke-width="2.5" />
+    <path d="M46 290 V210 C46 184, 114 184, 114 210 V290" fill="none" stroke="#9C7B44" stroke-width="2" />
+    <path d="M60 130 C50 145, 50 160, 60 170 C70 160, 70 145, 60 130 Z" fill="#E4D5AF" stroke="#9C7B44" stroke-width="1" />
+  </g>
+  <text x="600" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#3B2E22" font-weight="600">PLACEHOLDER — concept.jpg</text>
+  <text x="600" y="190" text-anchor="middle" font-family="Georgia, serif" font-size="19" fill="#6B5A47">Box of mithai next to the unlit and lit lantern, side by side</text>
+</svg>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Golden Collection — 50 Years of MM Mithaiwala</title>
+<meta name="description" content="MM Mithaiwala turns 50. The Golden Collection is a limited mithai box whose jaali-lattice sleeve folds into a standing lantern once the sweets are gone — one box, two lives.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Golden Collection — 50 Years of MM Mithaiwala">
+<meta property="og:description" content="A limited-run 50th-anniversary mithai box that folds into a standing lantern once the sweets are gone. One box, two lives.">
+<meta property="og:image" content="assets/hero.jpg">
+<meta property="og:url" content="https://mmmithaiwala.in/">
+<meta property="og:site_name" content="MM Mithaiwala">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Golden Collection — 50 Years of MM Mithaiwala">
+<meta name="twitter:description" content="A limited-run 50th-anniversary mithai box that folds into a standing lantern once the sweets are gone. One box, two lives.">
+<meta name="twitter:image" content="assets/hero.jpg">
+
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ivory:#F8F3E7;
+    --champagne:#E4D5AF;
+    --brass:#9C7B44;
+    --brass-deep:#7A5F35;
+    --ink:#3B2E22;
+    --ink-soft:#6B5A47;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --container: min(1180px, 100% - 3rem);
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{ max-width:100%; display:block; }
+
+  h1,h2,h3{ font-family:var(--serif); color:var(--ink); margin:0 0 .5em; font-weight:600; }
+  h1{ font-size:clamp(2.2rem, 5vw + 1rem, 4rem); line-height:1.08; }
+  h2{ font-size:clamp(1.8rem, 3vw + 1rem, 2.6rem); line-height:1.15; }
+  h3{ font-size:clamp(1.2rem, 1.2vw + 1rem, 1.5rem); }
+  p{ margin:0 0 1em; color:var(--ink-soft); }
+
+  a{ color:inherit; }
+
+  :focus-visible{
+    outline:3px solid var(--brass);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  .container{ width:var(--container); margin-inline:auto; }
+
+  section{ padding-block: clamp(3.5rem, 8vw, 7rem); }
+
+  /* jaali divider */
+  .jaali-divider{
+    height:34px;
+    background-image:
+      linear-gradient(135deg, transparent 45%, var(--champagne) 45% 55%, transparent 55%),
+      linear-gradient(45deg, transparent 45%, var(--champagne) 45% 55%, transparent 55%);
+    background-size:34px 34px;
+    background-repeat:repeat-x;
+    background-position:center;
+    opacity:.9;
+  }
+
+  /* buttons */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:.5em;
+    padding:.85em 1.6em;
+    border-radius:2px;
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:.98rem;
+    text-decoration:none;
+    border:1.5px solid var(--brass);
+    cursor:pointer;
+    transition:background .2s ease, color .2s ease, transform .15s ease;
+    position:relative;
+  }
+  .btn-primary{ background:var(--brass); color:var(--ivory); }
+  .btn-primary:hover{ background:var(--brass-deep); border-color:var(--brass-deep); transform:translateY(-1px); }
+  .btn-ghost{ background:transparent; color:var(--ink); }
+  .btn-ghost:hover{ background:var(--champagne); transform:translateY(-1px); }
+
+  /* header */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(248,243,231,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--champagne);
+  }
+  .site-nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-block:.9rem;
+  }
+  .site-nav img{ height:38px; width:auto; }
+  .site-nav ul{
+    list-style:none; display:flex; gap:1.75rem; margin:0; padding:0;
+  }
+  .site-nav a{
+    text-decoration:none; font-size:.95rem; font-weight:500; color:var(--ink-soft);
+    padding-block:.3rem;
+    border-bottom:1px solid transparent;
+    transition:color .2s, border-color .2s;
+  }
+  .site-nav a:hover{ color:var(--brass-deep); border-color:var(--brass); }
+  .nav-links{ display:flex; }
+  @media (max-width:720px){
+    .nav-links{ display:none; }
+  }
+
+  /* hero */
+  .hero{
+    padding-top:clamp(3rem,7vw,5rem);
+    display:grid;
+    gap:3rem;
+    align-items:center;
+  }
+  @media (min-width:900px){
+    .hero .container{ display:grid; grid-template-columns:1.05fr .95fr; gap:3.5rem; align-items:center; }
+  }
+  .hero-eyebrow{
+    font-family:var(--serif); font-style:italic; color:var(--brass-deep);
+    font-size:1.05rem; margin-bottom:.75rem;
+  }
+  .hero-sub{ font-size:1.15rem; max-width:44ch; }
+  .hero-ctas{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.75rem; }
+  .hero-frame{
+    position:relative;
+    clip-path:path('M0,60 C0,25 55,0 130,0 L370,0 C445,0 500,25 500,60 L500,560 C500,600 460,630 400,630 L100,630 C40,630 0,600 0,560 Z');
+    aspect-ratio: 5 / 6.3;
+    overflow:hidden;
+    background:var(--champagne);
+    box-shadow:0 30px 60px -20px rgba(59,46,34,.35);
+  }
+  .hero-frame img{ width:100%; height:100%; object-fit:cover; }
+
+  /* story */
+  .story-grid{ display:grid; gap:3rem; }
+  @media (min-width:900px){
+    .story-grid{ grid-template-columns:1fr 1fr; align-items:start; gap:4rem; }
+  }
+  .story-text p{ font-size:1.05rem; }
+  .stat-row{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:1.75rem 2rem;
+    margin-top:2rem; padding-top:2rem; border-top:1px solid var(--champagne);
+  }
+  @media (min-width:640px){ .stat-row{ grid-template-columns:repeat(4,1fr); } }
+  .stat-num{ font-family:var(--serif); font-size:clamp(1.6rem,2.2vw,2.2rem); color:var(--brass-deep); font-weight:600; }
+  .stat-label{ font-size:.85rem; color:var(--ink-soft); }
+  .stat-note{ font-size:.78rem; color:var(--ink-soft); opacity:.75; margin-top:.4rem; }
+
+  /* concept */
+  .concept{ background:var(--champagne); }
+  .concept .container{ display:grid; gap:3rem; }
+  @media (min-width:900px){
+    .concept .container{ grid-template-columns:1fr 1fr; align-items:center; }
+  }
+  .concept-frame{
+    position:relative;
+    clip-path:path('M0,50 C0,20 40,0 100,0 L520,0 C580,0 620,20 620,50 L620,420 C620,455 580,475 520,475 L100,475 C40,475 0,455 0,420 Z');
+    overflow:hidden;
+    background:var(--ivory);
+    box-shadow:0 24px 50px -18px rgba(59,46,34,.3);
+  }
+  .concept-frame img{ width:100%; height:100%; object-fit:cover; }
+  .concept-steps{ list-style:none; margin:1.75rem 0 0; padding:0; counter-reset:step; }
+  .concept-steps li{
+    counter-increment:step;
+    padding:1rem 0 1rem 3rem;
+    position:relative;
+    border-bottom:1px solid rgba(122,95,53,.25);
+  }
+  .concept-steps li:last-child{ border-bottom:none; }
+  .concept-steps li::before{
+    content: counter(step);
+    position:absolute; left:0; top:1rem;
+    font-family:var(--serif); font-weight:600; font-size:1.15rem;
+    color:var(--brass-deep);
+    width:2.1rem; height:2.1rem;
+    border:1.5px solid var(--brass-deep);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .concept-steps strong{ display:block; font-family:var(--serif); font-size:1.1rem; margin-bottom:.2rem; color:var(--ink); }
+
+  /* collection */
+  .collection-grid{
+    display:grid; gap:2.5rem; margin-top:2.5rem;
+  }
+  @media (min-width:860px){
+    .collection-grid{ grid-template-columns:1fr 1fr; }
+  }
+  .set-card{
+    background:var(--ivory);
+    border:1px solid var(--champagne);
+    display:flex; flex-direction:column;
+    overflow:hidden;
+    position:relative;
+  }
+  .set-card::before{
+    content:"";
+    position:absolute; inset:0;
+    pointer-events:none;
+    border:1px solid transparent;
+  }
+  .set-flag{
+    position:absolute; top:1.25rem; left:1.25rem;
+    background:var(--brass); color:var(--ivory);
+    font-size:.72rem; letter-spacing:1px; font-weight:600;
+    padding:.35em .8em; z-index:2;
+  }
+  .set-image{
+    aspect-ratio:4/3; overflow:hidden; background:var(--champagne);
+    clip-path:polygon(0 0,100% 0,100% 88%,92% 100%,8% 100%,0 88%);
+  }
+  .set-image img{ width:100%; height:100%; object-fit:cover; }
+  .set-body{ padding:1.75rem 1.75rem 2rem; flex:1; display:flex; flex-direction:column; }
+  .set-tagline{ font-family:var(--serif); font-style:italic; color:var(--brass-deep); font-size:.95rem; margin-bottom:.3rem; }
+  .set-list{ list-style:none; margin:1rem 0 1.25rem; padding:0; font-size:.92rem; }
+  .set-list li{
+    display:flex; justify-content:space-between; gap:1rem;
+    padding:.5rem 0; border-bottom:1px dashed var(--champagne);
+    color:var(--ink-soft);
+  }
+  .set-list li:last-child{ border-bottom:none; }
+  .set-list .decade{ font-family:var(--serif); color:var(--brass-deep); font-weight:600; flex-shrink:0; }
+  .set-price{
+    margin-top:auto; padding-top:1.25rem;
+    display:flex; align-items:baseline; gap:.6rem;
+    border-top:1px solid var(--champagne);
+  }
+  .set-price .amount{ font-family:var(--serif); font-size:1.6rem; color:var(--ink); font-weight:600; }
+  .set-price .placeholder-tag{ font-size:.72rem; color:var(--brass-deep); background:var(--champagne); padding:.2em .55em; }
+  .price-note{ font-size:.82rem; color:var(--ink-soft); margin-top:1.5rem; opacity:.85; }
+
+  /* creators */
+  .creators{ background:var(--ink); color:var(--ivory); }
+  .creators h2{ color:var(--ivory); }
+  .creators p{ color:var(--champagne); }
+  .creators-grid{ display:grid; gap:3rem; margin-top:2rem; }
+  @media (min-width:900px){ .creators-grid{ grid-template-columns:1.1fr .9fr; } }
+  .creators .btn-ghost{ border-color:var(--champagne); color:var(--ivory); }
+  .creators .btn-ghost:hover{ background:rgba(228,213,175,.15); }
+  .redeem-box{
+    background:rgba(248,243,231,.06);
+    border:1px solid rgba(228,213,175,.35);
+    padding:1.75rem;
+  }
+  .redeem-box h3{ color:var(--ivory); margin-bottom:.4rem; }
+  .redeem-form{ display:flex; gap:.75rem; margin-top:1.1rem; flex-wrap:wrap; }
+  .redeem-form input{
+    flex:1; min-width:140px;
+    background:var(--ivory); color:var(--ink);
+    border:1.5px solid var(--champagne);
+    padding:.8em 1em; font-size:1rem; font-family:var(--sans);
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  .redeem-form input::placeholder{ color:var(--ink-soft); text-transform:none; letter-spacing:normal; }
+  .redeem-form button{ font-family:var(--sans); }
+  .redeem-status{ font-size:.85rem; margin-top:.75rem; min-height:1.2em; color:var(--champagne); }
+
+  /* footer */
+  footer.site{ padding-block:3.5rem 3rem; }
+  .footer-grid{
+    display:grid; gap:2rem;
+  }
+  @media (min-width:720px){
+    .footer-grid{ grid-template-columns:auto 1fr auto; align-items:start; }
+  }
+  footer.site img{ height:44px; margin-bottom:1rem; }
+  .footer-contact{ font-size:.92rem; color:var(--ink-soft); }
+  .footer-contact a{ text-decoration:underline; text-decoration-color:var(--champagne); }
+  .footer-social{ display:flex; gap:1.25rem; font-size:.9rem; }
+  .footer-social a{ text-decoration:none; color:var(--brass-deep); font-weight:600; }
+  .footer-fine{ margin-top:2.5rem; font-size:.78rem; color:var(--ink-soft); opacity:.8; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="container site-nav">
+    <a href="#top" aria-label="The Golden Collection — MM Mithaiwala, home">
+      <img src="assets/logo.svg" alt="MM Mithaiwala — 50 Years — The Golden Collection logo">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#creators">Creators</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div>
+        <p class="hero-eyebrow">1976 — 2026</p>
+        <h1 id="hero-heading">A box of sweets. And, after that, a light.</h1>
+        <p class="hero-sub">For our 50th year, we built a mithai box that isn't done when the sweets are. Unfold the jaali-lattice sleeve and it becomes a standing lantern — sized for a tea-light, made to stay on your shelf long after the last kaju katli.</p>
+        <div class="hero-ctas">
+          <a href="#collection" class="btn btn-primary">See the two sets</a>
+          <a href="#creators" class="btn btn-ghost">For creators &amp; partners</a>
+        </div>
+      </div>
+      <div class="hero-frame">
+        <img src="assets/hero-placeholder.svg" alt="Lit and unlit hexagonal lantern gift set shown beside the octagonal mithai box, on a warm ivory backdrop">
+      </div>
+    </div>
+  </section>
+
+  <div class="jaali-divider" role="presentation"></div>
+
+  <!-- STORY -->
+  <section id="story" aria-labelledby="story-heading">
+    <div class="container story-grid">
+      <div class="story-text">
+        <h2 id="story-heading">Three generations, one shop on Kasturba Road</h2>
+        <p>MM Mithaiwala opened its doors in Malad in 1976, a single counter of kaju katli and motichur laddu run by hand. What started as one man's recipe book became a Malad institution passed down through three generations — the same sweets, the same slow methods, made for a neighbourhood that grew up on them.</p>
+        <p>Fifty years on, we wanted to mark the anniversary the way we've always done things: by hand, with something you keep rather than something you throw away. The Golden Collection is that — a gift box built to outlast the gifting.</p>
+      </div>
+      <div class="stat-row">
+        <div>
+          <div class="stat-num">1976</div>
+          <div class="stat-label">Year established</div>
+        </div>
+        <div>
+          <div class="stat-num">50,000+*</div>
+          <div class="stat-label">Customers served</div>
+        </div>
+        <div>
+          <div class="stat-num">120+*</div>
+          <div class="stat-label">Mithai varieties made</div>
+        </div>
+        <div>
+          <div class="stat-num">50th</div>
+          <div class="stat-label">Anniversary year</div>
+        </div>
+      </div>
+    </div>
+    <p class="container stat-note">*Placeholder figures — confirm exact counts before launch.</p>
+  </section>
+
+  <!-- CONCEPT -->
+  <section id="concept" class="concept" aria-labelledby="concept-heading">
+    <div class="container">
+      <div class="concept-frame">
+        <img src="assets/concept-placeholder.svg" alt="The mithai box shown open beside the same lantern sleeve, once unlit and once lit with a tea-light, side by side">
+      </div>
+      <div>
+        <h2 id="concept-heading">One box, two lives</h2>
+        <p>The sleeve that holds your mithai during the gifting is the same sleeve that becomes a lantern once it's empty. No extra packaging, nothing to throw away — just fold along the score lines and set a tea-light inside.</p>
+        <ol class="concept-steps">
+          <li><strong>Arrives</strong> A sealed jaali-lattice box of mithai, ribbon-tied, ready to gift.</li>
+          <li><strong>Opens</strong> Twelve (or nine) pieces, hand-arranged, with the sleeve doing double duty as the box.</li>
+          <li><strong>Folds</strong> Empty the box, fold the laser-cut cardstock along its creases, and it stands as a lantern — add a tea-light and it's yours to keep.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section id="collection" aria-labelledby="collection-heading">
+    <div class="container">
+      <h2 id="collection-heading">The Golden Collection</h2>
+      <p style="max-width:60ch">Two sets, both built around the same idea — sweets first, lantern after. Choose the flagship tower for the full fifty-year story, or the everyday box for a lighter gift.</p>
+
+      <div class="collection-grid">
+        <!-- Panch Diya Tower -->
+        <article class="set-card">
+          <span class="set-flag">Flagship set</span>
+          <div class="set-image">
+            <img src="assets/tower-set-placeholder.svg" alt="The tall tapered tower lantern of the Panch Diya Tower set, shown lit with a tea-light">
+          </div>
+          <div class="set-body">
+            <p class="set-tagline">Panch Diya Tower</p>
+            <h3>Five sweets, five decades</h3>
+            <p>Each piece marks a decade of the shop, arranged in the order we made them.</p>
+            <ul class="set-list">
+              <li><span class="decade">1976</span><span>Kaju Katli</span></li>
+              <li><span class="decade">1986</span><span>Motichur Laddu</span></li>
+              <li><span class="decade">1996</span><span>Malai Cake</span></li>
+              <li><span class="decade">2006</span><span>Kesar Ghevar</span></li>
+              <li><span class="decade">2016</span><span>Bombay Ice Halwa</span></li>
+            </ul>
+            <div class="set-price">
+              <span class="amount">₹2,999</span>
+              <span class="placeholder-tag">placeholder price</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Teen Diya Box -->
+        <article class="set-card">
+          <span class="set-flag">Everyday set</span>
+          <div class="set-image">
+            <img src="assets/octagon-box-placeholder.svg" alt="The small octagonal ribbon-tied mithai box of the Teen Diya Box set">
+          </div>
+          <div class="set-body">
+            <p class="set-tagline">Teen Diya Box</p>
+            <h3>Three sweets, the essentials</h3>
+            <p>The three sweets we're most asked for, in a lighter box that still folds into its own small lantern.</p>
+            <ul class="set-list">
+              <li><span class="decade">01</span><span>Kaju Katli</span></li>
+              <li><span class="decade">02</span><span>Motichur Laddu</span></li>
+              <li><span class="decade">03</span><span>Malai Cake</span></li>
+            </ul>
+            <div class="set-price">
+              <span class="amount">₹1,799</span>
+              <span class="placeholder-tag">placeholder price</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="price-note">Prices shown are placeholders and are not final — please confirm before the campaign goes live.</p>
+    </div>
+  </section>
+
+  <!-- CREATORS -->
+  <section id="creators" class="creators" aria-labelledby="creators-heading">
+    <div class="container creators-grid">
+      <div>
+        <h2 id="creators-heading">For creators &amp; partners</h2>
+        <p>A limited number of Golden Collection boxes are going out to Mumbai and Maharashtra creators ahead of launch — each with a personal discount code to share with their audience. If that's you, or you'd like it to be, we'd love to hear from you.</p>
+        <p>Priority goes to creators based in Mumbai and across Maharashtra, covering food, gifting, and heritage-brand content.</p>
+        <a class="btn btn-ghost" href="mailto:sales@mmmithaiwala.in?subject=Golden%20Collection%20—%20Creator%20Application">Apply as a creator</a>
+      </div>
+
+      <div class="redeem-box">
+        <h3>Have a code?</h3>
+        <p>Enter your creator's discount code below to shop the collection.</p>
+        <form class="redeem-form" id="redeemForm" novalidate>
+          <label for="redeemCode" class="visually-hidden" style="position:absolute;left:-9999px;">Discount code</label>
+          <input type="text" id="redeemCode" name="code" placeholder="e.g. PRIYA20" autocomplete="off" inputmode="text" required>
+          <button type="submit" class="btn btn-primary">Redeem</button>
+        </form>
+        <p class="redeem-status" id="redeemStatus" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="jaali-divider" role="presentation"></div>
+
+<footer class="site" id="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/logo.svg" alt="MM Mithaiwala — 50 Years — The Golden Collection logo">
+    </div>
+    <address class="footer-contact">
+      Vasanti Bhavan, Kasturba Rd, opp. Malad Railway Station,<br>
+      Malad West, Mumbai 400064<br>
+      <a href="tel:+919167899507">+91 91678 99507</a> ·
+      <a href="mailto:sales@mmmithaiwala.in">sales@mmmithaiwala.in</a>
+    </address>
+    <div class="footer-social">
+      <a href="https://instagram.com/m.m.mithaiwala" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://mmmithaiwala.in" target="_blank" rel="noopener noreferrer">mmmithaiwala.in</a>
+    </div>
+  </div>
+  <p class="container footer-fine">© 2026 MM Mithaiwala. The Golden Collection is a limited 50th-anniversary edition.</p>
+</footer>
+
+<script>
+  (function () {
+    var form = document.getElementById('redeemForm');
+    var input = document.getElementById('redeemCode');
+    var status = document.getElementById('redeemStatus');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var raw = input.value.trim();
+      if (!raw) {
+        status.textContent = 'Enter a code to continue.';
+        input.focus();
+        return;
+      }
+      var code = encodeURIComponent(raw.toUpperCase());
+      var url = 'https://mmmithaiwala.in/discount/' + code + '?redirect=/collections/gifting';
+      status.textContent = 'Opening mmmithaiwala.in with your code applied…';
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-hidden="true">
+  <defs>
+    <pattern id="jaaliOct" width="48" height="48" patternUnits="userSpaceOnUse">
+      <rect width="48" height="48" fill="#F8F3E7" />
+      <path d="M0 24 L24 0 L48 24 L24 48 Z" fill="none" stroke="#E4D5AF" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#jaaliOct)" />
+  <rect x="16" y="16" width="968" height="968" fill="none" stroke="#9C7B44" stroke-width="3" stroke-dasharray="14 10" />
+  <polygon points="380,320 620,320 700,400 700,600 620,680 380,680 300,600 300,400"
+           fill="#F8F3E7" stroke="#7A5F35" stroke-width="3" opacity="0.9" />
+  <line x1="440" y1="260" x2="440" y2="320" stroke="#9C7B44" stroke-width="3" />
+  <line x1="560" y1="260" x2="560" y2="320" stroke="#9C7B44" stroke-width="3" />
+  <path d="M430 260 Q500 200 570 260" fill="none" stroke="#9C7B44" stroke-width="3" />
+  <line x1="340" y1="440" x2="380" y2="470" stroke="#9C7B44" stroke-width="1.2" />
+  <line x1="340" y1="480" x2="400" y2="440" stroke="#9C7B44" stroke-width="1.2" />
+  <line x1="620" y1="440" x2="660" y2="470" stroke="#9C7B44" stroke-width="1.2" />
+  <text x="500" y="780" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#3B2E22" font-weight="600">PLACEHOLDER — octagon-box.jpg</text>
+  <text x="500" y="816" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#6B5A47">Teen Diya Box — small octagonal ribbon-tied mithai box</text>
+</svg>
